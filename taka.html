@@ -5,7 +5,6 @@
         <title>taka8501(taka_mini)の実験場</title>
 <link href="main.css" rel="stylesheet">
 <link href="main.scss" rel="stylesheet">
-<script type="text/javascript" src="javascript.js"></script>
 
     </head>
     <body>
@@ -63,88 +62,9 @@ function alt() {
 <ol>商用利用、並びに自作発言、二次配布はNG.必ず守ってください.</ol>
 <h1>==ここから埋め込み==</h1>
 <div class="btn-border-gradient-wrap btn-border-gradient-wrap--gold">
-  <a href="https://taka-0106.my.canva.site/" class="btn btn-border-gradient"><span class="btn-text-gradient--gold">通常版サイトへ</span></a>
-端末の判定：<span id="view_device"></span>
-
-<script type="text/javascript">
-document.getElementById("view_device").innerHTML = check_device();
-
-//端末の判定
-function check_device() {
-	var dev = "unknown";
-	//iOS
-	var np = navigator.platform;
-	if ((np == "iPhone") || (np == "iPad") || (np == "iPod")) dev = "iOS";
-	//Windows, MacOS, Android
-	var ua = navigator.userAgent;
-	if (ua.indexOf("Windows") > 0) dev = "Windows";
-	if (ua.indexOf("Mac") > 0) dev = "MacOS";
-	if (ua.indexOf("Android") > 0) dev = "Android";
-
-	return dev;
-}
-    </script>
-<ol>機種名が表示されないときは,chromeOS、またはandroidの派生、linuxです。</ol>
-
-<script type="text/javascript">
-function win_open() {
-	window.open("https://taka-0106.my.canva.site/","","width=200,height=200"); 
-}
-</script> 
-<span id="view_mail"></span>
-
-<script type="text/javascript">
-acount = ""; //アカウント
-domain = ""; //ドメイン
-ma = acount + "@" + domain;
-document.getElementById("view_mail").innerHTML = "<a href='javascript:sendmail()'>" + ma + "</a>"; //メールアドレス表示
-
-function sendmail() {
-	this.location.href = "mailto:" + ma; //メールソフト起動
-}
-</script>
-<form><input type="button" value="おみくじ" onClick="omikuji()"></form>
-
-<script type="text/javascript">
-function omikuji() {
-	rand = Math.floor(Math.random()*5);
-	if (rand == 0) msg = "大吉";
-	if (rand == 1) msg = "中吉";
-	if (rand == 2) msg = "吉";
-	if (rand == 3) msg = "凶";
-	if (rand == 4) msg = "大凶";
-	alert(msg);
-}
-</script>
-<div class="spinner">
-  <div class="outer">
-    <div class="inner tl"></div>
-    <div class="inner tr"></div>
-    <div class="inner br"></div>
-    <div class="inner bl"></div>
-  </div>
-</div>
-<div class="btn-border-gradient-wrap btn-border-gradient-wrap--silver">
-  <a href="file:///home/chronos/u-f3f5f4b08f69aa6760abe9043350854f84c7578f/MyFiles/html/oko.html" class="btn btn-border-gradient"><span class="btn-text-gradient--silver">おすすめマインクラフトサーバー（JAVA,BE対応</span></a>
-</div>
-
-<script type="text/javascript">
-document.getElementById("view_today").innerHTML = getToday();
-
-function getToday() {
-	var now = new Date();
-	var year = now.getFullYear();
-	var mon = now.getMonth()+1; //１を足すこと
-	var day = now.getDate();
-	var you = now.getDay(); //曜日(0～6=日～土)
-
-	//曜日の選択肢
-	var youbi = new Array("日","月","火","水","木","金","土");
-	//出力用
-	var s = year + "年" + mon + "月" + day + "日 (" + youbi[you] + ")";
-	return s;
-}
-</script>
+<a href="https://taka-0106.my.canva.site/" class="btn btn-border-gradient"><span class="btn-text-gradient--gold">通常版サイトへ</span></a>
+<script type="text/javascript" src="javascript.js"></script>	
+	
 
 
 
